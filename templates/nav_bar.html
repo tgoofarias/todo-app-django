@@ -1,0 +1,4 @@
+{% if request.user.is_authenticated %}
+<a href="{% url 'logout' %}">logout</a>
+<a href="{% url 'profile' %}">profile</a>
+{% endif %}
